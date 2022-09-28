@@ -1,0 +1,145 @@
+.aboutImage {
+    width: 400px;
+    border-radius: 2rem;
+    aspect-ratio: 1/1;
+    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+}
+
+.about__img {
+    border-radius: 2rem;
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+.about__img:hover {
+    transform: rotate(0deg);
+}
+.containerr {
+    display: flex;
+}
+.cards__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* ======ABOUT CARD====== */
+
+.icon {
+    font-size: 25px;
+    margin-top: 1.5rem;
+}
+
+.card__container {
+    background-color: var(--color-bg-variant);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+.card__container:hover {
+    background-color: transparent;
+    border-color: var(--color-primary-variant);
+}
+h5 {
+    font-size: 15px;
+    margin-top: 0.2rem;
+    font-weight: 400;
+}
+
+p {
+    font-size: 12px;
+    margin-top: 0.3rem;
+    color: var(--color-light);
+    font-weight: 300;
+}
+/* =====CARD ENDS===== */
+
+/* ==========RIGHT======= */
+
+.right {
+    margin-left: 17rem;
+}
+
+.right__desc {
+    margin-top: 30px;
+    width: 80%;
+}
+
+.right__btn {
+    margin-top: 40px;
+    font-weight: 600;
+}
+/* =======MEDIA QUERIES(MEDIUM DEVICES)====== */
+@media screen and (max-width: 1024px) {
+    .containerr {
+        display: block;
+    }
+    .left {
+        display: flex;
+        justify-content: center;
+    }
+    .aboutImage {
+        width: 500px;
+        border-radius: 2rem;
+    }
+
+    .right {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    .cards__container {
+        margin-top: 4rem;
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+
+    .right__desc {
+        text-align: center;
+    }
+}
+
+/* =======MEDIA QUERIES(SMALL DEVICES)====== */
+@media screen and (max-width: 600px) {
+    .left {
+        display: flex;
+        justify-content: center;
+    }
+    .aboutImage {
+        width: 300px;
+        border-radius: 2rem;
+    }
+    .containerr {
+        display: block;
+    }
+
+    .right {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    .cards__container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+    .right__desc {
+        text-align: center;
+    }
+}
