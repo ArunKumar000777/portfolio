@@ -1,7 +1,6 @@
 import React from "react";
 import aboutImg from "../../assets/aboutMe.jpg";
 import "./about.css";
-import Card from "./Card";
 
 const About = () => {
     return (

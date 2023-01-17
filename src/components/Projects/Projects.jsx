@@ -18,10 +18,10 @@ const Projects = () => {
                     </div>
                     <h3>Tesla Web Page Design</h3>
                     <div className="project__item-cta">
-                        <a href="https://github.com/ArunKumar000777/tesla" className="btn" target="_blank">
+                        <a href="https://github.com/ArunKumar000777/tesla" className="btn" target="_blank" rel="noreferrer">
                             Github
                         </a>
-                        <a href="https://project-tesla-60d2e.firebaseapp.com/" className="btn btn-primary" target="_blank">
+                        <a href="https://project-tesla-60d2e.firebaseapp.com/" className="btn btn-primary" target="_blank" rel="noreferrer">
                             Live Demo
                         </a>
                     </div>
@@ -32,10 +32,10 @@ const Projects = () => {
                     </div>
                     <h3>TechNotes Fullstack Project</h3>
                     <div className="project__item-cta">
-                        <a href="https://github.com/ArunKumar000777/technotes" className="btn" target="_blank">
+                        <a href="https://github.com/ArunKumar000777/technotes" className="btn" target="_blank" rel="noreferrer">
                             Github
                         </a>
-                        <a href="https://technotess-0c9r.onrender.com/" className="btn btn-primary" target="_blank">
+                        <a href="https://technotess-0c9r.onrender.com/" className="btn btn-primary" target="_blank" rel="noreferrer">
                             Live Demo
                         </a>
                     </div>
@@ -50,10 +50,11 @@ const Projects = () => {
                             href="https://github.com/ArunKumar000777/responsive_website_tailwind"
                             className="btn"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             Github
                         </a>
-                        <a href="https://acme-rockets-di4k.onrender.com/" className="btn btn-primary" target="_blank">
+                        <a href="https://acme-rockets-di4k.onrender.com/" className="btn btn-primary" target="_blank" rel="noreferrer">
                             Live Demo
                         </a>
                     </div>
@@ -64,10 +65,10 @@ const Projects = () => {
                     </div>
                     <h3>Disney-clone-app</h3>
                     <div className="project__item-cta">
-                        <a href="https://github.com/ArunKumar000777" className="btn" target="_blank">
+                        <a href="https://github.com/ArunKumar000777" className="btn" target="_blank" rel="noreferrer">
                             Github
                         </a>
-                        <a href="https://disney-clone-000.onrender.com" className="btn btn-primary" target="_blank">
+                        <a href="https://disney-clone-000.onrender.com" className="btn btn-primary" target="_blank" rel="noreferrer">
                             Live Demo
                         </a>
                     </div>
@@ -79,10 +80,10 @@ const Projects = () => {
                     </div>
                     <h3>Blog-app</h3>
                     <div className="project__item-cta">
-                        <a href="https://github.com/ArunKumar000777" className="btn" target="_blank">
+                        <a href="https://github.com/ArunKumar000777" className="btn" target="_blank" rel="noreferrer">
                             Github
                         </a>
-                        <a href="https://blog-app-arun.onrender.com" className="btn btn-primary" target="_blank">
+                        <a href="https://blog-app-arun.onrender.com" className="btn btn-primary" target="_blank" rel="noreferrer">
                             Live Demo
                         </a>
                     </div>
@@ -94,10 +95,10 @@ const Projects = () => {
                     </div>
                     <h3>Social Media App</h3>
                     <div className="project__item-cta">
-                        <a href="https://github.com/ArunKumar000777" className="btn" target="_blank">
+                        <a href="https://github.com/ArunKumar000777" className="btn" target="_blank" rel="noreferrer">
                             Github
                         </a>
-                        <a href="https://social-media-app-arun.onrender.com" className="btn btn-primary" target="_blank">
+                        <a href="https://social-media-app-arun.onrender.com" className="btn btn-primary" target="_blank" rel="noreferrer">
                             Live Demo
                         </a>
                     </div>
@@ -109,10 +110,10 @@ const Projects = () => {
                     </div>
                     <h3>Ecommerce App</h3>
                     <div className="project__item-cta">
-                        <a href="https://github.com/ArunKumar000777" className="btn" target="_blank">
+                        <a href="https://github.com/ArunKumar000777" className="btn" target="_blank" rel="noreferrer">
                             Github
                         </a>
-                        <a href="https://arun-ecommerce-app.onrender.com" className="btn btn-primary" target="_blank">
+                        <a href="https://arun-ecommerce-app.onrender.com" className="btn btn-primary" target="_blank" rel="noreferrer">
                             Live Demo
                         </a>
                     </div>
