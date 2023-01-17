@@ -31,7 +31,7 @@
 }
 
 /* =======MEDIA QUERIES(MEDIUM DEVICES)====== */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
     .project__container {
         grid-template-columns: repeat(2,1fr);
         gap: 1.2rem;

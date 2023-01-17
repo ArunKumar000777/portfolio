@@ -3,7 +3,7 @@ import { BsPatchCheckFill } from "react-icons/bs";
 import "./skills.css";
 const Skills = () => {
     return (
-        <section id="skills">
+        <section id="skills" className="skills_section">
             <h5>What skills i have</h5>
             <h2>My Skills</h2>
             <div className="container skills__container">
@@ -49,6 +49,13 @@ const Skills = () => {
                             <BsPatchCheckFill className=" skills__icon" />
                             <div>
                                 <h4>Redux-Toolkit</h4>
+                                <small className="text-light">Intermediate</small>
+                            </div>
+                        </article>
+                        <article className="skills__details">
+                            <BsPatchCheckFill className=" skills__icon" />
+                            <div>
+                                <h4>Tailwind css</h4>
                                 <small className="text-light">Intermediate</small>
                             </div>
                         </article>

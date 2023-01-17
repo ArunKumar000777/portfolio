@@ -1,5 +1,13 @@
+.about_section{
+    height: 100vh;
+}
+.about_heading{
+    margin-top: 50px;
+}
+
 .aboutImage {
-    width: 400px;
+    width: 340px;
+    height: 340px;
     border-radius: 2rem;
     aspect-ratio: 1/1;
     background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
@@ -7,8 +15,12 @@
 
 .about__img {
     border-radius: 2rem;
-    transform: rotate(10deg);
+    transform: rotate(8deg);
     transition: var(--transition);
+    height: 100%;
+    filter: brightness(80%);
+    object-fit: cover;
+    object-position: top;
 }
 
 .about__img:hover {
@@ -16,6 +28,8 @@
 }
 .containerr {
     display: flex;
+    align-items: center;
+
 }
 .cards__container {
     display: flex;
@@ -32,8 +46,8 @@
 
 .card__container {
     background-color: var(--color-bg-variant);
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,26 +71,35 @@ p {
     margin-top: 0.3rem;
     color: var(--color-light);
     font-weight: 300;
+   text-align: justify;
 }
 /* =====CARD ENDS===== */
 
 /* ==========RIGHT======= */
 
 .right {
-    margin-left: 17rem;
+    margin-left: 8rem;
 }
 
 .right__desc {
     margin-top: 30px;
     width: 80%;
+    color: whitesmoke;
+    letter-spacing: 1.07px;
 }
 
 .right__btn {
     margin-top: 40px;
     font-weight: 600;
 }
+.i{
+    font-weight: 600;
+}
 /* =======MEDIA QUERIES(MEDIUM DEVICES)====== */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
+    .about_heading{
+        margin-top: 20px;
+    }
     .containerr {
         display: block;
     }
@@ -85,8 +108,12 @@ p {
         justify-content: center;
     }
     .aboutImage {
-        width: 500px;
+        width: 300px;
         border-radius: 2rem;
+    }
+    .about__img{
+        width: 100%;
+        height: 100%;
     }
 
     .right {
@@ -94,6 +121,7 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 40px;
         /* justify-content: center; */
     }
 
@@ -117,8 +145,12 @@ p {
         justify-content: center;
     }
     .aboutImage {
-        width: 300px;
+        width: 250px;
         border-radius: 2rem;
+    }
+    .about__img {
+        width: 250px;
+        height: 100%;
     }
     .containerr {
         display: block;

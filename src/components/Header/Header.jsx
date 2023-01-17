@@ -1,21 +1,21 @@
 import React from "react";
 import CTA from "./CTA";
 import "./header.css";
-import myPhoto from "../../assets/me.png";
+import myPhoto from "../../assets/myPic.png";
 import HeaderSocials from "./HeaderSocials";
 const Header = () => {
     return (
         <header>
             <div className="container header__container">
-                <h5>Hello I'm</h5>
-                <h1>ArunKumar.k</h1>
-                <h5 className="text-light">Fullstack Developer</h5>
+                <h5 className="hello">Hello I'm</h5>
+                <h1 className="my_name">ArunKumar.k</h1>
+                <h5 className="text-light job">Fullstack Developer</h5>
                 <CTA />
                 <HeaderSocials />
 
-                <div className="me">
-                    <img src={myPhoto} alt="me" />
-                </div>
+                {/* <div className="me">
+                    <img src={myPhoto} alt="me" className="myPic"/>
+                </div> */}
                 <a href="#contact" className="scroll__down">
                     Scroll Down
                 </a>

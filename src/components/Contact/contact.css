@@ -1,9 +1,12 @@
+.contact_heading {
+    margin-top: 20px;
+}
 .container.contact__container {
-    width: 58%;
+    width: 65%;
     display: grid;
     grid-template-columns: 30% 58%;
-    gap: 12%;
-    margin-bottom: 2rem;
+    gap: 15%;
+    margin-bottom: 1rem;
 }
 .contact__options {
     display: flex;
@@ -12,8 +15,8 @@
 }
 .contact__option {
     background-color: var(--color-bg-variant);
-    padding: 1.2rem;
-    border-radius: 1rem;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -47,27 +50,35 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    align-self: center;
 }
 .button {
     align-self: flex-end;
+    padding: 0.5rem 1rem;
 }
 
 input,
 textarea {
     width: 100%;
-    padding: 1.5rem;
+    padding: 0.8rem;
     border-radius: 0.5rem;
     background: transparent;
     border: 2px solid var(--color-primary-variant);
     resize: none;
     color: var(--color-white);
 }
+.email {
+    font-size: 10px;
+}
 
 /* =======MEDIA QUERIES(MEDIUM DEVICES)====== */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
     .container.contact__container {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+    .email {
+        font-size: 16px;
     }
 }
 /* =======MEDIA QUERIES(SMALL DEVICES)====== */

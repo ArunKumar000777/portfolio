@@ -1,28 +1,58 @@
 import React from "react";
 import { MdOutlineMailOutline } from "react-icons/md";
-import { BsWhatsapp } from "react-icons/bs";
+import { BsWhatsapp, BsTelephonePlus } from "react-icons/bs";
 import "./contact.css";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
+    console.log(process.env.TEMPLATE_ID);
     const form = useRef();
+    const notify = () => {
+        toast.success("email has been successfully sent", {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+        });
+    };
+    const errorNotify = () => {
+        toast.error("something went wrong", {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+        });
+    };
 
     const sendEmail = (e) => {
         e.preventDefault();
 
         emailjs.sendForm("service_jlp1v3j", "template_ktgd0mo", form.current, "e1JsoHc8eOVmu9CBN").then(
             (result) => {
-                console.log(result.text);
+                notify();
+                // console.log(result.text);
             },
             (error) => {
-                console.log(error.text);
+                errorNotify();
+                // console.log(error.text);
+                // console.log(error);
             }
         );
-        e.target.reset()
+        e.target.reset();
     };
     return (
-        <section id="contact">
-            <h5>Get In Touch</h5>
+        <section id="contact" className="contact">
+            <h5 className="contact_heading">Get In Touch</h5>
             <h2>Contact Me</h2>
 
             <div className="container contact__container">
@@ -30,16 +60,24 @@ const Contact = () => {
                     <article className="contact__option">
                         <MdOutlineMailOutline className="contact__option-icon" />
                         <h4>Email</h4>
-                        <h5>arunashok1020@gmail.com</h5>
+                        <h5 className="email">arunashok1020@gmail.com</h5>
                         <a href="mailto:arunashok1020@gmail.com" target="_blank">
                             Send a Message
                         </a>
                     </article>
                     <article className="contact__option">
+                        <BsTelephonePlus className="contact__option-icon" />
+                        <h4>Call Me</h4>
+                        <h5>+91 7907456800</h5>
+                        <a href="7907456800" target="_blank">
+                            Click to call
+                        </a>
+                    </article>
+                    <article className="contact__option">
                         <BsWhatsapp className="contact__option-icon" />
                         <h4>WhatsApp</h4>
-                        <h5>+12346567890</h5>
-                        <a href="https://wa.me/+919961518763" target="_blank" >
+                        <h5>+91 9961518763</h5>
+                        <a href="https://wa.me/+919961518763" target="_blank">
                             Send a Message
                         </a>
                     </article>
@@ -55,6 +93,18 @@ const Contact = () => {
                     </button>
                 </form>
             </div>
+            <ToastContainer
+                position="top-right"
+                autoClose={2000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark"
+            />
         </section>
     );
 };
