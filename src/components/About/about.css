@@ -173,5 +173,9 @@ p {
     }
     .right__desc {
         text-align: center;
+        margin-top: 15px;
+    }
+    .right__btn{
+        margin-top: 10px;
     }
 }
