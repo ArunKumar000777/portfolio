@@ -69,7 +69,7 @@ const Contact = () => {
                         <BsTelephonePlus className="contact__option-icon" />
                         <h4>Call Me</h4>
                         <h5>+91 7907456800</h5>
-                        <a href="7907456800" target="_blank">
+                        <a href="tel:7907456800" target="_blank">
                             Click to call
                         </a>
                     </article>
