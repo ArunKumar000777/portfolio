@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none;
+    /* outline: 2px solid white; */
     list-style: none;
     text-decoration: none;
 }
@@ -152,7 +152,7 @@ input[type="text"] {
         width: var(--container-width-sm);
     }
     section {
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
     }
     .btn {
         padding: 0.5rem 0.9rem;

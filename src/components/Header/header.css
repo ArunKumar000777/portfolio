@@ -85,14 +85,17 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-    header {
+    /* header {
         height: 100vh;
-    }
+    } */
     .header__socials,
     .scroll__down {
         display: none;
     }
     .hello{
         margin-top: 100px;
+    }
+    .header__container{
+        height: 60vh;
     }
 }
