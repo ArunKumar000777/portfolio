@@ -7,6 +7,7 @@ import socialMedia from "../../assets/social-media-app.png"
 import techNotes from "../../assets/TechNotes.png";
 import ecommerce from "../../assets/ecommerce-app.png";
 import acmeRockets from "../../assets/acme-rockets.png";
+import admindashboard from "../../assets/admindashboard.png"
 const Projects = () => {
     return (
         <section id="project">
@@ -114,6 +115,21 @@ const Projects = () => {
                             Github
                         </a>
                         <a href="https://arun-ecommerce-app.onrender.com" className="btn btn-primary" target="_blank" rel="noreferrer">
+                            Live Demo
+                        </a>
+                    </div>
+                </article>
+                {/* //* admin dashboard */}
+                <article className="project__item">
+                    <div className="project__item-image">
+                        <img src={admindashboard} alt="" />
+                    </div>
+                    <h3>Admin Dashboard</h3>
+                    <div className="project__item-cta">
+                        <a href="https://github.com/ArunKumar000777/react-admin-dashboard" className="btn" target="_blank" rel="noreferrer">
+                            Github
+                        </a>
+                        <a href="https://arunadmindashboard.onrender.com/" className="btn btn-primary" target="_blank" rel="noreferrer">
                             Live Demo
                         </a>
                     </div>
