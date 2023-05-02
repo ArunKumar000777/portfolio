@@ -10,15 +10,19 @@ const About = () => {
             <div className="container containerr">
                 <div className="left">
                     <div className="aboutImage">
-                        <img src={aboutImg} alt=""  className="about__img box_shadow"/>
+                        <img src={aboutImg} alt="" className="about__img box_shadow" />
                     </div>
                 </div>
-                <div className="right">
-                    
+                <div className="right" data-aos="fade-up" data-aos-duration="1000">
                     <p className="right__desc">
-                       <span className="i">I</span>'am a Frontend React developer from Kannur , Kerala, India. i am a Self taught developer I use several online facility to develop my coding skills. I enjoy taking complex problem and turning them into simple and beutiful interface designs. I also have the logic and structure of coding and always strive to write elegent and efficient code
+                        <span className="i">I</span>'am a Frontend React developer from Kannur , Kerala, India. i am a Self
+                        taught developer I use several online facility to develop my coding skills. I enjoy taking complex
+                        problem and turning them into simple and beutiful interface designs. I also have the logic and
+                        structure of coding and always strive to write elegent and efficient code
                     </p>
-                    <a href="#contact" className="btn btn-primary right__btn">Let's Talk</a>
+                    <a href="#contact" className="btn btn-primary right__btn">
+                        Let's Talk
+                    </a>
                 </div>
             </div>
         </section>

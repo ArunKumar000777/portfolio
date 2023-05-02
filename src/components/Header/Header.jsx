@@ -6,8 +6,10 @@ import HeaderSocials from "./HeaderSocials";
 const Header = () => {
     return (
         <header>
-            <div className="container header__container">
-                <h5 className="hello">Hello I'm</h5>
+            <div className="container header__container"  data-aos="fade-up" data-aos-duration="1000">
+                <h5 className="hello">
+                    Hello I'm
+                </h5>
                 <h1 className="my_name">ArunKumar.k</h1>
                 <h5 className="text-light job">Fullstack Developer</h5>
                 <CTA />

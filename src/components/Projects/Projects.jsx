@@ -13,7 +13,7 @@ const Projects = () => {
         <section id="project">
             <h2>My Projects</h2>
             <div className="container project__container">
-                <article className="project__item">
+                <article className="project__item"  data-aos="fade-up" data-aos-duration="1300">
                     <div className="project__item-image">
                         <img src={pro1Scrshot} alt="" />
                     </div>
@@ -27,7 +27,7 @@ const Projects = () => {
                         </a>
                     </div>
                 </article>
-                <article className="project__item">
+                <article className="project__item"  data-aos="fade-up" data-aos-duration="1000">
                     <div className="project__item-image">
                         <img src={techNotes} alt="" />
                     </div>
@@ -41,7 +41,7 @@ const Projects = () => {
                         </a>
                     </div>
                 </article>
-                <article className="project__item">
+                <article className="project__item"  data-aos="fade-up" data-aos-duration="1200">
                     <div className="project__item-image">
                         <img src={acmeRockets} alt="" />
                     </div>
@@ -60,7 +60,7 @@ const Projects = () => {
                         </a>
                     </div>
                 </article>
-                <article className="project__item">
+                <article className="project__item"  data-aos="fade-up" data-aos-duration="1000">
                     <div className="project__item-image">
                         <img src={disneyClone} alt="" />
                     </div>
@@ -75,7 +75,7 @@ const Projects = () => {
                     </div>
                 </article>
                 {/* //*blog app */}
-                <article className="project__item">
+                <article className="project__item" data-aos="fade-up" data-aos-duration="1200">
                     <div className="project__item-image">
                         <img src={blogApp} alt="" />
                     </div>
@@ -90,7 +90,7 @@ const Projects = () => {
                     </div>
                 </article>
                 {/* //* social media app */}
-                <article className="project__item">
+                <article className="project__item" data-aos="fade-up" data-aos-duration="1000">
                     <div className="project__item-image">
                         <img src={socialMedia} alt="" />
                     </div>
@@ -105,7 +105,7 @@ const Projects = () => {
                     </div>
                 </article>
                 {/* //* ecommerce */}
-                <article className="project__item">
+                <article className="project__item" data-aos="fade-up" data-aos-duration="1000">
                     <div className="project__item-image">
                         <img src={ecommerce} alt="" />
                     </div>
@@ -120,7 +120,7 @@ const Projects = () => {
                     </div>
                 </article>
                 {/* //* admin dashboard */}
-                <article className="project__item">
+                <article className="project__item" data-aos="fade-up" data-aos-duration="1000">
                     <div className="project__item-image">
                         <img src={admindashboard} alt="" />
                     </div>
